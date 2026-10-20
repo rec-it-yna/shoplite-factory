@@ -1,0 +1,45 @@
+name: Bug
+description: Signaler un comportement anormal de ShopLite
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: contexte
+    attributes:
+      label: Contexte
+      description: Qui a signalé le problème, quand, sur quelle fonction ?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduire
+    attributes:
+      label: Étapes pour reproduire
+      description: La requête ou les données qui déclenchent le problème.
+      placeholder: "1. Appeler GET /orders/O12/quote\n2. ..."
+    validations:
+      required: true
+  - type: textarea
+    id: observe
+    attributes:
+      label: Comportement observé
+    validations:
+      required: true
+  - type: textarea
+    id: attendu
+    attributes:
+      label: Comportement attendu
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Extrait de log (si disponible)
+      render: shell
+  - type: textarea
+    id: criteres
+    attributes:
+      label: Critères d'acceptation
+      description: Ce qui doit être vrai pour fermer le ticket.
+      placeholder: "- [ ] ...\n- [ ] Un test de non-régression est ajouté\n- [ ] La CI est verte"
+    validations:
+      required: true
