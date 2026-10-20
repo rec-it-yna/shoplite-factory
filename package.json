@@ -1,0 +1,15 @@
+{
+  "name": "shoplite",
+  "version": "1.0.0",
+  "private": true,
+  "description": "API de devis fictive pour le lab Copilot (formation IA générative)",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}
