@@ -1,0 +1,26 @@
+name: Évolution
+description: Demander une nouvelle fonctionnalité
+title: "[Évolution] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: besoin
+    attributes:
+      label: Besoin
+      description: "Qui en a besoin et pourquoi ? (En tant que…, je veux…, afin de…)"
+    validations:
+      required: true
+  - type: textarea
+    id: proposition
+    attributes:
+      label: Proposition
+      description: Ce que le système doit faire (route, données, format).
+    validations:
+      required: true
+  - type: textarea
+    id: criteres
+    attributes:
+      label: Critères d'acceptation
+      placeholder: "- [ ] ...\n- [ ] Des tests sont ajoutés\n- [ ] La CI est verte"
+    validations:
+      required: true
